@@ -47,3 +47,6 @@
       0% { transform: translateX(0); }
       100% { transform: translatex(-56vw); }
     }
+#MCJ{
+  cursor: pointer;
+}
