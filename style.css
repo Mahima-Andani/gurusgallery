@@ -5,13 +5,13 @@
 
 .home{
   height: 100vh;
-  background-color: #e1eaef;
+  background-color: #fff;
   /* text-align: center; */
   /* margin-top: 10%; */
   overflow: hidden;
 }
 .logo{
-    max-width: 6rem;
+    max-width: 4rem;
     position: fixed;
     z-index: 20;
 }
@@ -23,19 +23,22 @@
 .title{
   position: absolute;
   z-index: 2;
-  background-color: #ffffffe1;
+  background-color: #e1eaef;
+  background: linear-gradient(#ffffff0c 10%, #e1eaefaa 25%, #e1eaef 75%);
   padding: 5% 2.5%;
   margin: 0;
   text-align: center;
   top: 40vh;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 70%;
   /* transform: translateY(50%); */
-  border-top: 1px solid #0a20e5;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.021); */
 }
 .title::after{
   width: 100vw;
   height: 200%;
   content: '';
-  background-color: #fff;
+  background-color: #e1eaef;
   position: absolute;
   top: 100%;
   left: 0;
@@ -47,7 +50,7 @@
     #231557 0%,
     #0a20e5 29%,
     #6d6cf9 67%, 
-    #44107a 100%
+    #44107a 80%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -59,11 +62,14 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 10s linear infinite;
   display: inline-block;
+  font-size: 7vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 .animate-charcter:first-child{
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 5vw;
+  font-size: 9vw;
   margin-block: 50px;
 }
 
@@ -106,8 +112,8 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .home{
-    background-color: #fff;
+  .logo{
+    max-width: 6rem;
   }
   .heading{
     display: flex;
@@ -127,6 +133,10 @@
     position: relative;
   }
   .animate-charcter{
+  font-size: 4vw;
+}
+  .animate-charcter:first-child{
+  font-size: 5vw;
 }
 
 }
