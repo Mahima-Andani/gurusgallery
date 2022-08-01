@@ -39,7 +39,7 @@
     
     .marquee-item img {
       display: block;
-      width: 90%;
+      width: 80%;
     /*   padding: 0 20px; */
     }
     
@@ -47,4 +47,3 @@
       0% { transform: translateX(0); }
       100% { transform: translatex(-56vw); }
     }
-    
