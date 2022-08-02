@@ -113,10 +113,36 @@
 }
 .modal-dialog{
   max-width: 70%;
+  margin: 0 auto;
 }
+.modal_img{
+  width: 30%;
+  /* border-bottom-right-radius: 100%;
+  border-top-right-radius: 100%; */
+  border: 2px solid #d4d5d1d7;
+  border-radius: 50px;
+}
+.modal_img_young{
+  width: unset;
+  height: 280px;
+  border-radius: 20px;
+}
+.modal_intro{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1%;
+  margin: 0;
+  /* background-color: #ecede8; */
+}
+
 @media only screen and (min-width: 600px) {
   .logo{
     max-width: 6rem;
+  }
+  .modal_intro{
+    flex-wrap: nowrap;
   }
   /* .heading{
     display: flex;
