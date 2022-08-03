@@ -24,13 +24,12 @@ body{
 }
 .logo{
     text-align: center;
-    padding: 5% 0;
+    padding: 5vh 0;
 }
 .logo .gc{
   width: 50%;
   margin: 0 auto;
   cursor: pointer;
-
 }
 .heading{
   /* display: flex;
@@ -39,7 +38,7 @@ body{
 
 }
 .title{
-  padding: 2.5% 2%;
+  padding: 2.5vh 2%;
   margin: 0;
 }
 .gold-text__highlight
@@ -76,7 +75,7 @@ body{
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-  margin: 100px 0;
+  margin: 10vh 0;
 }
 .hr_hide{
   display: flex;
@@ -87,11 +86,11 @@ body{
 .hide{
   display: block;
   font-style: italic;
-  margin-top: 25%;
+  margin-top: 15vh;
   font-size: 3vw;
 }
 
-.marquee {
+/* .marquee {
   background-color: #ecede8;
   padding: 0;
   margin: 0 auto;
@@ -112,18 +111,17 @@ body{
 @keyframes scrolling {
   0% { transform: translateY(0); }
   100% { transform: translateY(-360vh); }
-}
+} */
 
 .poster_section{
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 .poster_card{
   background-color: #f6f2c0;
   color: #cb9b51;
-  width: 70%;
+  width: 80%;
   margin: 20px;
   padding: 5%;
   text-align: center;
@@ -132,10 +130,10 @@ body{
 box-shadow: 10px 10px 5px 0px ;
 
 }
-.poster{
+/* .poster{
   height: 100vh;
   border-radius: 15px;
-}
+} */
 .click-to-view{
   font-size: 2.5ch;
   text-align: center;
@@ -184,8 +182,9 @@ box-shadow: 10px 10px 5px 0px ;
     #f6e27a 70%,
     #cb9b51 100%
     );
-  max-width: 18rem;
+  max-width: 20rem;
   text-align: center;
+  margin: 2%;
 }
 .card-header{
   display: inline-block;
@@ -199,7 +198,11 @@ box-shadow: 10px 10px 5px 0px ;
   -webkit-transform: scale3d(1.2, 1.2, 1);
   transform: scale3d(1.2, 1.2, 1);
 }
-
+@media only screen and (min-width: 1300px) {
+  .hr_hide{
+    display: none;
+  }
+}
 @media only screen and (min-width: 900px) {
   .logo{
     padding: 10px 0;
@@ -216,10 +219,8 @@ box-shadow: 10px 10px 5px 0px ;
   .hr{
     margin: 0;
   }
-  .hr_hide{
-    display: none;
-  }
-  
+
+
   /* .heading{
     display: flex;
     justify-content: space-between;
