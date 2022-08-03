@@ -185,7 +185,7 @@ box-shadow: 10px 10px 5px 0px ;
     #cb9b51 100%
     );
   max-width: 18rem;
- 
+  text-align: center;
 }
 .card-header{
   display: inline-block;
