@@ -8,14 +8,14 @@
   background-color: #000;
   /* text-align: center; */
   /* margin-top: 10%; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .logo{
     text-align: center;
-    padding: 1% 0;
+    padding: 5% 0;
 }
 .logo .gc{
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
 }
 .heading{
@@ -115,8 +115,10 @@
   margin: 0;
   /* background-color: #ecede8; */
 }
-
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
+  .logo{
+    padding: 10px 0;
+  }
   .logo .gc{
     width: 15%;
   }
@@ -141,10 +143,10 @@
     position: relative;
   } */
   .animate-charcter{
-  font-size: 4vw;
+  font-size: 3vw;
 }
   .animate-charcter:first-child{
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 }
