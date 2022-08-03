@@ -8,7 +8,7 @@
   background-color: #000;
   /* text-align: center; */
   /* margin-top: 10%; */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .logo{
     text-align: center;
@@ -30,7 +30,7 @@
 }
 .gold-text__highlight
 {
-  font-size: 3vw;
+  font-size: 4vw;
   font-family: 'Times New Roman',serif;
   letter-spacing: 5px;
   font-weight: bold;
@@ -55,6 +55,12 @@
   font-weight: 900;
   font-size: 6vw;
   margin-block: 50px;
+}
+.hide{
+  display: block;
+  font-style: italic;
+  margin-top: 25%;
+  font-size: 3vw;
 }
 
 .marquee {
@@ -125,6 +131,10 @@
   .modal_intro{
     flex-wrap: nowrap;
   }
+  .hide{
+    display: none;
+  }
+  
   /* .heading{
     display: flex;
     justify-content: space-between;
