@@ -5,79 +5,58 @@
 
 .home{
   height: 100vh;
-  background-color: #fff;
+  background-color: #000;
   /* text-align: center; */
   /* margin-top: 10%; */
   overflow: hidden;
 }
 .logo{
-    max-width: 4rem;
-    position: fixed;
-    z-index: 20;
+    text-align: center;
+    padding: 1% 0;
+}
+.logo .gc{
+  width: 30%;
+  margin: 0 auto;
 }
 .heading{
   /* display: flex;
   justify-content: space-evenly; */
   position: relative;
+
 }
 .title{
-  /* position: absolute;
-  z-index: 2;
-  background-color: #e1eaef;
-  background: linear-gradient(#ffffff0c 10%, #e1eaefaa 25%, #e1eaef 75%); */
-  padding: 5% 2%;
+  padding: 2.5% 2%;
   margin: 0;
-  /* text-align: center; */
-  /* top: 40vh; */
-  /* border-top-left-radius: 70%;
-  border-top-right-radius: 70%; */
-  /* transform: translateY(50%); */
-  /* border-top: 1px solid rgba(255, 255, 255, 0.021); */
 }
-/* .title::after{
-  width: 100vw;
-  height: 200%;
-  content: '';
-  background-color: #e1eaef;
-  position: absolute;
-  top: 100%;
-  left: 0;
-} */
-.animate-charcter
+.gold-text__highlight
 {
+  font-size: 3vw;
+  font-family: 'Times New Roman',serif;
+  letter-spacing: 5px;
+  font-weight: bold;
   background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #0a20e5 29%,
-    #6d6cf9 67%, 
-    #44107a 80%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 10s linear infinite;
-  display: inline-block;
-  font-size: 7vw;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+ to right,
+ #462523 0,
+ #cb9b51 22%, 
+ #f6e27a 45%,
+ #f6f2c0 50%,
+ #f6e27a 55%,
+ #cb9b51 78%,
+ #462523 100%
+ );
+  color:transparent;
+  -webkit-background-clip:text;
+  text-shadow: 1px 1px 2px #f6f2c025;
+  text-align: center;
+
 }
-.animate-charcter:first-child{
+.gold-text__highlight:first-child{
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 9vw;
+  font-size: 6vw;
   margin-block: 50px;
 }
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
 .marquee {
   background-color: #ecede8;
   padding: 0;
@@ -138,8 +117,8 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .logo{
-    max-width: 6rem;
+  .logo .gc{
+    width: 15%;
   }
   .modal_intro{
     flex-wrap: nowrap;
