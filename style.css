@@ -138,7 +138,7 @@ box-shadow: 10px 10px 5px 0px ;
   font-size: 2.5ch;
   text-align: center;
   color: rgb(175, 175, 175);
-  padding: 10px;
+  padding: 2.5rem;
 }
 .gallery{
   display: flex;
@@ -146,12 +146,16 @@ box-shadow: 10px 10px 5px 0px ;
   justify-content: space-around;
   /* margin-top: 2%; */
 }
+.modal-body{
+  padding: 1% 3%;
+  text-align: justify;
+}
 .modal-dialog{
-  max-width: 70%;
-  margin: 0 auto;
+  max-width: 95%;
+  margin: 1% auto;
 }
 .modal_img{
-  width: 30%;
+  width: 50%;
   /* border-bottom-right-radius: 100%;
   border-top-right-radius: 100%; */
   border: 2px solid #d4d5d1d7;
@@ -164,12 +168,17 @@ box-shadow: 10px 10px 5px 0px ;
 }
 .modal_intro{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1%;
+  flex-direction: column;
+  padding: 1% 0;
   margin: 0;
+  text-align: center;
   /* background-color: #ecede8; */
+}
+.modal_intro_brief{
+  padding-right: 1%;
 }
 .card{
   cursor: pointer;
@@ -184,7 +193,8 @@ box-shadow: 10px 10px 5px 0px ;
     );
   max-width: 20rem;
   text-align: center;
-  margin: 2%;
+  margin-inline: 2vw;
+  margin-bottom: 2.5vh;
 }
 .card-header{
   display: inline-block;
@@ -219,8 +229,19 @@ box-shadow: 10px 10px 5px 0px ;
   .hr{
     margin: 0;
   }
-
-
+  .card{
+    margin-bottom: 15vh;
+  }
+  .modal-dialog{
+    max-width: 75%;
+  }
+  .modal_intro{
+  flex-direction: row;
+  text-align: left;
+  }
+  .modal_img{
+    width: 30%;
+  }
   /* .heading{
     display: flex;
     justify-content: space-between;
