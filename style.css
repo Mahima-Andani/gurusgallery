@@ -208,6 +208,27 @@ box-shadow: 10px 10px 5px 0px ;
   -webkit-transform: scale3d(1.2, 1.2, 1);
   transform: scale3d(1.2, 1.2, 1);
 }
+.footer{
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 1%;
+  border-top: 2px solid #cb9b51;
+  border-color: linear-gradient(
+    to right,
+    #cb9b51 0, 
+    #f6e27a 30%,
+    #f6f2c0 50%,
+    #f6e27a 70%,
+    #cb9b51 100%
+    );
+}
+.footer p{
+  margin-bottom: 0;
+  font-size: 2vw;
+  letter-spacing: 1px;
+}
+
 @media only screen and (min-width: 1300px) {
   .hr_hide{
     display: none;
